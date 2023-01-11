@@ -1,0 +1,234 @@
+
+
+:root {
+    --body-background-color: #0F0D13;
+    --container-background-color: #2A2141;
+    --font-color: #E1E1E6;
+}
+
+* {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+   font-family: 'Roboto', sans-serif;
+}
+
+
+body {
+    height: 100vh;
+    background-color: var(--body-background-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+main {
+    height: 498px;
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+}
+
+
+/*==========COMMONS STYLES FOR ALL 3============*/
+
+
+.informations-container .title {
+    font-weight: 700;
+    font-size: 24.0074px;
+    color: var(--font-color);
+}
+
+.informations-container .author {
+    font-weight: 400;
+    font-size: 19.2059px;
+    color: var(--font-color);
+    opacity: 0.67;
+}
+
+.controls-container img {
+    cursor: pointer;
+}
+
+.timers {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.timers p {
+    font-weight: 400;
+    font-size: 14.4px;
+    color: var(--font-color);
+    opacity: 0.7;
+}
+
+/*============================================*/
+
+
+
+
+
+/*LARGE MODEL*/
+
+#large-model {
+    width: 267px;
+    height: 498px;
+    padding: 38px;
+    background-color: var(--container-background-color);
+
+    display: flex;
+    flex-direction: column;
+    gap: 29px;
+    
+    border-radius: 10px;
+}
+
+#large-model .img-cover {
+    width: 190px;
+    height: 190px;
+}
+
+#large-model .controls-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#large-model .music-duration-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#large-model .music-duration-container .seek-bar {
+    width: 190px;
+    height: 6px;
+    border-radius: 10px;
+    background-color: #D9D9D9;
+    opacity: 0.3;
+}
+
+#large-model .music-duration-container .progress-bar {
+    width: 165px;
+    height: 6px;
+    border-radius: 10px;
+    background-color: #D9D9D9;
+    opacity: 0.8;
+}
+
+
+
+/*OTHERS MODELS*/
+
+#others-models {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+#others-models .img-cover{
+    width: 84px;
+    height: 84px;
+}
+
+#medium-model,#small-model {
+    display: flex;
+    flex-direction: column;
+    gap: 29px;
+
+    padding: 29px;
+    width: 357.71px;
+    background-color: var(--container-background-color);
+    border-radius: 10px;
+}
+
+#medium-model .cover-informations-container ,#small-model .cover-informations-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 29px;
+}
+
+#medium-model .controls-container, #small-model .controls-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 50px;
+}
+
+#medium-model  .music-duration-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#medium-model  .music-duration-container .seek-bar {
+    width: 300px;
+    height: 6px;
+    border-radius: 10px;
+    background-color: #D9D9D9;
+    opacity: 0.3;
+}
+
+#medium-model .music-duration-container .progress-bar {
+    width: 261px;
+    height: 6px;
+    border-radius: 10px;
+    background-color: #D9D9D9;
+    opacity: 0.8;
+}
+
+
+
+/*RESPONSIVE*/
+
+@media (max-width: 680px) {
+
+    main {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        align-items: center;
+    }
+
+    #others-models {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    #small-model {
+        margin-bottom: 10rem;
+    }
+}
+
+
+@media (max-width: 380px) {
+
+    #medium-model, #small-model {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        width: 267px;
+    }
+
+    #medium-model .title, #small-model .title{
+        font-size: 19px;
+    }
+
+    #medium-model .author, #small-model .author{
+        font-size: 15px;
+    }
+
+    #medium-model  .music-duration-container .seek-bar {
+        width: calc(267px - 48px);
+    }
+    
+    #medium-model .music-duration-container .progress-bar {
+        width: 165px;
+    }
+
+}
