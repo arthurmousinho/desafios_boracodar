@@ -7,5 +7,5 @@
 - HTML 
 - CSS
 
-## ⬆️ Melhorias
+## ⬆️ Melhorias Futuras
 - Implementar as funcionalidades do player usando javascript.
