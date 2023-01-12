@@ -1,0 +1,84 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+ }
+ 
+ 
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #D9CDF7;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 13px;
+}
+
+#couch-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+#couch-container #rotate-icon {
+    display: inline;
+    width: 33px;
+    height: 22.47px;
+    cursor: pointer;
+}
+
+
+#product-info-container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: left;
+}
+
+#product-info-container #product-code {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    color: #271A45;
+}
+
+#product-info-container h1 {
+    font-family: 'Crimson Pro', serif;
+    font-weight: 600;
+    font-size: 45px;
+}
+
+#product-info-container #product-amount {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: #271A45;
+}
+
+#product-info-container button {
+
+    font-weight: 400;
+    font-size: 15px;
+    color: #271A45;
+
+   padding-top: 0.5rem;
+   padding-bottom: 0.5rem;
+   padding-left: 1rem;
+   padding-right: 1rem;
+
+   border: 0.5px solid #271A45;
+   border-radius: 999px;
+
+   background-color: transparent;
+
+   width: 230px;
+   height: 40px;
+
+   cursor: pointer;
+}
