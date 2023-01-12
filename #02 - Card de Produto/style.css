@@ -33,6 +33,9 @@ main {
     cursor: pointer;
 }
 
+#couch-image {
+    width: 449px;
+}
 
 #product-info-container {
     display: flex;
