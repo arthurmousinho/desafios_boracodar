@@ -1,4 +1,7 @@
 const Rotate = {
+
+    couchImage: document.getElementById('couch-image'),
+    rotateIcon: document.getElementById('rotate-icon'),
     rotating: false,
 
     init() {
@@ -11,19 +14,16 @@ const Rotate = {
 
     startRotating() {
         this.rotating = true
-        const couchImage = document.getElementById('couch-image')
-        const rotateIcon = document.getElementById('rotate-icon')
-
-        couchImage.setAttribute('src', './assets/gif.gif')
-        rotateIcon.setAttribute('src', './assets/close.svg')
+        this.set('gif.gif','close.svg')
     },
 
     stopRotating() {
         this.rotating = false
-        const couchImage = document.getElementById('couch-image')
-        const rotateIcon = document.getElementById('rotate-icon')
-
-        couchImage.setAttribute('src', './assets/couch.jpg')
-        rotateIcon.setAttribute('src', './assets/360.svg')
+        this.set('couch.jpg','360.svg')
     },
+
+    set(couchFile, iconFile) {
+        this.couchImage.setAttribute('src', `./assets/${couchFile}`)
+        this.rotateIcon.setAttribute('src', `./assets/${iconFile}`)
+    }
 }
