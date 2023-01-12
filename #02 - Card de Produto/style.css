@@ -82,3 +82,40 @@ main {
 
    cursor: pointer;
 }
+
+
+@media (max-width: 720px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 13px;
+    } 
+}
+
+@media (max-width: 460px) {
+    #couch-container {
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #couch-container img {
+        width: 100%;
+    }
+
+    #product-info-container {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 400px) {
+    #product-info-container h1 {
+        font-size: 35px;
+    }
+}
