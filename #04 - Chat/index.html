@@ -6,19 +6,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>#boracodar Chat</title>
     <link rel="stylesheet" href="./style.css">
+
+    <!-- https://fonts.google.com -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <main>
         <header>
-            <div id="user-info">
-                <img src="https://www.figma.com/file/zQw8qPgaYVzmi8J4DL6KzJ/%23boraCodar---Desafio-4-(Community)?node-id=2%3A112&t=CJzA42gUrfYhD7jY-4" alt="user profile image">
-                <div>
+            <div id="user-info-container">
+                <img src="./assets/avatar.png" alt="user profile image">
+                <div id="user-info">
                     <h3>Cecilia Sassaki</h3>
-                    <p>Online</p>
+                    <div>
+                        <img src="./assets/online-icon.svg" alt="online icon">
+                        <p>Online</p>
+                    </div>
                 </div>
             </div>
-            
+            <img src="./assets/close.svg" alt="close window icon" id="close-icon">
         </header>
+
+        <section id="chat-container">
+
+            <div class="contact-msg-container">
+                <p>Cecilia - 11:30</p>
+                <div>
+                    <p>
+                        Tive uma ideia incrível para um projeto! 😍
+                    </p>
+                </div>
+            </div>
+
+            <div class="user-msg-container">
+                <p>Você - 11:32</p>
+                <div>
+                    <p>
+                        Sério? Me conta mais.
+                    </p>
+                </div>
+            </div>
+
+            <div class="contact-msg-container">
+                <p>Cecilia - 11:34</p>
+                <div>
+                    <p>
+                        E se a gente fizesse um chat moderno e responsivo em apenas uma semana?
+                    </p>
+                </div>
+            </div>
+
+            <div class="user-msg-container">
+                <p>Você - 11:36</p>
+                <div>
+                    <p>
+                        #boraCodar! 🚀
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <div id="text-input-container">
+            <input type="text" placeholder="Digite sua mensagem">
+            <img src="./assets/send-icon.svg" alt="send message icon">
+        </div>
     </main>
 </body>
 </html>
