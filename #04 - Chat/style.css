@@ -124,6 +124,10 @@ section {
     border-radius: 999px;
 }
 
+#text-input-container img:hover {
+    cursor: pointer;
+}
+
 input {
     width: 98%;
     height: auto;
