@@ -1,4 +1,4 @@
-# Desafio do #boracodar da Rocketseat
+# Desafios do #boracodar da Rocketseat
 
 ![desafio1](./%2301%20-%20Player%20de%20%C3%81udio/github/preview.png)
 
