@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+:root {
+    --bg-main: #130F1E;
+    --bg-body: #1E1E1E;
+
+    --primary-color: #8257e5;
+    --secondary-color: #3C3748;
+    --tertiary-color: transparent;
+
+    --primary-hover: #9674E5;
+    --secondary-hover: #6A617F;
+    --tertiary-hover: transparent;
+
+    --focus-border: border: 2px solid #D9CDF7;
+
+    --secondary-disable: #3c374883;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    background-color: var(--bg-body);
+}
+
+main {
+    padding-left: 44px;
+    padding-right: 44px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: var(--bg-main);
+    border-radius: 20px;
+}
+
+h1 {
+    text-align: left;
+    font-size: 2rem;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 10px;
+}
+
+p {
+    width: 100%;
+    max-width: 300px;
+    font-size: 19px; 
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.515);
+}
+
+#buttons-container {
+    margin-top: 68px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    width: 100%;
+}
+
+
+button {
+    width: 100%;
+    max-width: 300px;
+    height: 48px;
+    border: none;
+    border-radius: 24px;
+    font-weight: 500;
+}
+
+.primary-button {
+    background-color: var(--primary-color);
+    color: white;
+    cursor: pointer;
+}
+
+.primary-button:hover {
+    background-color: var(--primary-hover);
+}
+
+.secondary-button {
+    background-color: var(--secondary-color);
+    color: rgba(255, 255, 255, 0.52);
+    cursor: pointer;
+}
+
+.secondary-button:hover {
+    background-color: var(--secondary-hover);
+}
+
+.tertiary-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 11px;
+    background-color: var(--tertiary-color);
+    color: white;
+    cursor: move;
+}
+
+.tertiary-button:hover {
+    border: 1.5px dashed white;
+}      
+
+.loading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 11px;
+    cursor: progress;
+}
+
+.loading img {
+    animation: spin 400ms infinite;
+}
+
+.disable {
+    background-color: transparent;
+    cursor: not-allowed;
+    color: rgba(255, 0, 0, 0.863);
+    border: 1.5px solid red;
+}
+
+.disable:hover {
+    background-color: transparent;
+}
+
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@media (max-width: 500px) {
+    body {
+        margin-top: 0;
+        background-color: var(--bg-main);
+    } 
+}
