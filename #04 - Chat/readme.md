@@ -1,5 +1,5 @@
 # Botões e Cursores
-- Desafio #03 do [#bordacodar](https://boracodar.dev)
+- Desafio #04 do [#bordacodar](https://boracodar.dev)
 
 ![preview](./github/preview.png)
 
